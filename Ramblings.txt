@@ -1,0 +1,59 @@
+introduce yourself
+Hello I'm Mirko Velimirovic
+
+Welcome to
+The Great Fontbakery show
+
+before we start I just want to introduce people to a few resources that are useful
+
+The Missing Semester;
+https://missing.csail.mit.edu/
+Ramble about missing semester
+
+Another note, I'm going to be running most of this on the command line. It's worth it to get acquainted with how to use your computer's shell. 
+I'm running ZSH
+it's a shell like Bash but with some decoration and text completion. I've also kitted it out with oh my zsh which indicates (in this configuration) which branch I'm on in the git repo I'm working on. 
+
+
+What is fb?
+Fontbakery is Font QA software that can be run on the command line or on the fontbakery dashboard. https://fontbakery.graphicore.de/
+
+Fonts are complicated and as such can become tedious to check thoroughly. Imagine you've just drawn your superfamily of 81 styles and now it's clipping in legacy Microsoft Office programs from before 2013. Why? Maybe you need a DSIG table, but that wasn't on the menu of things to think about when you made your masterpiece. Fontbakery will check for you. 
+
+Fontbakery is part of a development cycle. As type designers we don't like to think of our fonts as software. They're art or they're a tool or they're some other abstract thing. The problem is (all theory aside) in practical terms fonts are software. we need to be able to test them as software. Font Development is Software development. 
+
+
+I'm going to show you the complicated way to manage font development with a qa tool using git. You can also just use the fontbakery dashboard site, if all of this is a bit too technical, but where's the fun in that? 
+https://fontbakery.graphicore.de/
+
+point everyone to the repository. 
+https://github.com/bghryct/TheGreatFontbakeryShow
+
+Introduce people to the tools
+
+Pip  https://pip.pypa.io/en/stable/installing/
+Python https://www.python.org/downloads/
+Venv https://docs.python.org/3/library/venv.html
+fontbakery https://github.com/googlefonts/fontbakery
+macdown https://macdown.uranusjr.com/
+I use macdown to read FB reports it's a nice clean way to look at them
+
+In this workshop I'm going to show you how to use fontbakery on the command line as part of a git version controlled font build. We're going to be building Jost, which is a nifty paul renner inspired variable font designed by my friend Owen Earl of indestructible type and mastered by me. The font is available on google fonts. 
+
+We won't be building the exact Google build because it's been tested to the moon and back, Instead we'll be building and testing an earlier version that has problems. Because the whole point of showing off QA software is to show how it can help you identify problems, and then how to fix them. 
+
+
+Ok cool, let's get into it. 
+
+we're going to install a virtual environment. 
+this will keep all of our tooling separate from system installs of python. 
+
+python3 -m venv venv
+
+we're going to want to add the folder venv/ to our .gitignore so that we don't go uploading all of our tools to what should be a clean repo. 
+
+for more on writing .gitignore look here. 
+https://git-scm.com/docs/gitignore
+
+now we're going to activate our virtual environment:
+source venv/bin/activate 
