@@ -42,8 +42,10 @@ In this workshop I'm going to show you how to use fontbakery on the command line
 
 We won't be building the exact Google build because it's been tested to the moon and back, Instead we'll be building and testing an earlier version that has problems. Because the whole point of showing off QA software is to show how it can help you identify problems, and then how to fix them. 
 
+install python3 
+https://www.python.org/downloads/
 
-Ok cool, let's get into it. 
+Ok cool, let's get into it. We're going to speedily install everythin in our venv. I'm going to assume you've got python installed. Maybe make people install python before the workshop. (email everyone)
 
 we're going to install a virtual environment. 
 this will keep all of our tooling separate from system installs of python. 
@@ -57,3 +59,83 @@ https://git-scm.com/docs/gitignore
 
 now we're going to activate our virtual environment:
 source venv/bin/activate 
+
+we're going to check what pip has installed for us in the venv
+pip list
+
+if you get a message saying pip isn't up to date 
+pip install --upgrade pip
+
+won't hurt to do this regardless
+
+now we'll install fontbakery
+
+pip install fontbakery
+
+we'll check that it's installed with
+
+pip list
+
+cool, now we'll install fontmake
+
+pip install fontmake
+
+pip list
+
+now we'll install gftools
+
+pip install gftools
+
+pip list
+
+(to see if we've got everything)
+alternatively you can just type 
+gftools
+
+now I'm going to build a font from source, 
+so I'm going to navigate to the source folder,
+
+I'm going vim build.sh
+this will let us look at the build script I've written for this font. 
+you could always open it in a text editor of your choice but vim is useful and it's right in the terminal. 
+
+ok cool loooking at this build script it looks like it's going to build from the file source/jost.glyphs and it's going to be variable and the instance point coordinates will be rounded and the output path is going in the file source/vf/ as jost[slnt,wght].ttf
+
+it also looks like it's running fontbakery at the end. Let's look at what that command means. 
+fontbakery check-googlefonts ./source/vf/*.ttf --dark-theme --ghmarkdown jost_problems.md
+
+cool ok let's run this build
+quit vim by typing 
+esc
+:q
+now run the build script by typing 
+./build.sh
+
+if this doesn't work you may have to give yourself permission (funny I know it's your computer)
+chmod +x build.sh
+
+Now we have a fontbakery report generated in markdown that we can read. I'm on a mac and I like to read these reports on macdown. 
+
+open jost_problems.md
+
+ok a few issues. Some of these are easy to fix with the gftools we downloaded. Let's see what happens when we re-implement them in our build.sh. 
+
+open your build.sh and uncomment out lines
+22-39
+
+now save it. 
+
+and run the build script again. 
+
+you should be seeing less fails, 
+
+now open up the md file again. Wow if everything worked correctly there should be no fails. 
+
+Talk about the duplicate fix. Open glyphs and fix, if there's time;
+
+talk about the gftools fixes if time;
+
+show how to use dashboard if time;
+
+Thanks for attending my workshop everyone. And thank you TypeWknd for putting on an amazing conference. 
+

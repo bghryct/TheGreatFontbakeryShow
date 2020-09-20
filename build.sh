@@ -38,4 +38,4 @@ echo "Build UFOS Removed"
 
 # echo "end vf cleaning"
 
-fontbakery check-googlefonts ./source/vf/*.ttf --ghmarkdown jost_problems.md
+fontbakery check-googlefonts ./source/vf/*.ttf --dark-theme --ghmarkdown jost_problems.md
