@@ -129,7 +129,13 @@ and run the build script again.
 
 you should be seeing less fails, 
 
-now open up the md file again. Wow if everything worked correctly there should be no fails. 
+now open up the md file again. Wow if everything worked correctly there should be fewer fails.
+
+to end your venv fun simply type
+deactivate
+
+to start again
+source venv/bin/activate
 
 Talk about the duplicate fix. Open glyphs and fix, if there's time;
 
