@@ -23,3 +23,4 @@ For a thorough set of documentation and a video saying essentially what I've wri
 1.  [Missing Semester](https://missing.csail.mit.edu/)
 1. [zsh](https://ohmyz.sh/)
 1. [venv docs](https://docs.python.org/3/library/venv.html)
+2. [OpenType Spec](https://docs.microsoft.com/en-us/typography/opentype/spec/)
