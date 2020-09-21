@@ -8,7 +8,7 @@ Fonts are complicated and as such can become tedious to check thoroughly. Imagin
 
 Fontbakery is part of a development cycle. As type designers sometimes we don't think of our fonts as software. They're art or they're a tool or they're some other abstraction. The problem is (all theory aside) in practical terms fonts *are* software. we need to be able to test them as software. Succinctly Font Development is Software development. 
 
-For a thorough set of documentation and a video saying essentially what I've written above by Fontbakery maintainer Felipe Sanchez, [please read the docs.](https://font-bakery.readthedocs.io/en/latest/)
+For a thorough set of documentation and a video saying essentially what I've written above by Fontbakery maintainer Felipe Sanches, [please read the docs.](https://font-bakery.readthedocs.io/en/latest/)
 
 
 # Workshop Links
