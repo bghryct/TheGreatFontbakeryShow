@@ -1,7 +1,7 @@
 ![The Great Fontbakery Show](https://github.com/bghryct/TheGreatFontbakeryShow/blob/master/images/TGFBS.png)
 
 
-#What is Font Bakery?
+# What is Font Bakery?
 ### Fontbakery is Font QA software that can be run on the command line or on the Font Bakery dashboard. [Font Bakery Dashboard](https://fontbakery.graphicore.de/)
 
 Fonts are complicated and as such can become tedious to check thoroughly. Imagine you've just drawn your superfamily of 81 styles and now it's clipping in legacy Microsoft Office programs from before 2013. Why? Maybe you need a DSIG table, but that wasn't on the list of things to think about when you made your masterpiece. Fontbakery will check for you. 
