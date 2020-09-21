@@ -37,6 +37,9 @@ Venv https://docs.python.org/3/library/venv.html
 fontbakery https://github.com/googlefonts/fontbakery
 macdown https://macdown.uranusjr.com/
 I use macdown to read FB reports it's a nice clean way to look at them
+so send these to everyone beforehand
+
+QA stands for Quality Assurance
 
 In this workshop I'm going to show you how to use fontbakery on the command line as part of a git version controlled font build. We're going to be building Jost, which is a nifty paul renner inspired variable font designed by my friend Owen Earl of indestructible type and mastered by me. The font is available on google fonts. 
 
