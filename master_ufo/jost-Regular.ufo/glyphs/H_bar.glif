@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Hbar" format="2">
+  <advance width="1430"/>
+  <unicode hex="0126"/>
+  <anchor x="715" y="0" name="bottom"/>
+  <anchor x="715" y="700" name="center"/>
+  <anchor x="715" y="1400" name="top"/>
+  <anchor x="20" y="1400" name="topleft"/>
+  <outline>
+    <contour>
+      <point x="160" y="0" type="line"/>
+      <point x="330" y="0" type="line"/>
+      <point x="330" y="580" type="line"/>
+      <point x="1100" y="580" type="line"/>
+      <point x="1100" y="0" type="line"/>
+      <point x="1270" y="0" type="line"/>
+      <point x="1270" y="930" type="line"/>
+      <point x="1352" y="930" type="line"/>
+      <point x="1352" y="1090" type="line"/>
+      <point x="1270" y="1090" type="line"/>
+      <point x="1270" y="1400" type="line"/>
+      <point x="1100" y="1400" type="line"/>
+      <point x="1100" y="1090" type="line"/>
+      <point x="330" y="1090" type="line"/>
+      <point x="330" y="1400" type="line"/>
+      <point x="160" y="1400" type="line"/>
+      <point x="160" y="1090" type="line"/>
+      <point x="78" y="1090" type="line"/>
+      <point x="78" y="930" type="line"/>
+      <point x="160" y="930" type="line"/>
+    </contour>
+    <contour>
+      <point x="330" y="740" type="line"/>
+      <point x="330" y="930" type="line"/>
+      <point x="1100" y="930" type="line"/>
+      <point x="1100" y="740" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

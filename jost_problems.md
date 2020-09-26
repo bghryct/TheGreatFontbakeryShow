@@ -1,20 +1,9 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.29
+Fontbakery version: 0.7.31
 
 <details>
 <summary><b>[14] Family checks</b></summary>
-<details>
-<summary>ℹ <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
-
-* [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
-
-* ℹ **INFO** fontbakery (0.7.29)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.29 (latest)
-
-* 🍞 **PASS** Font Bakery is up-to-date
-
-</details>
 <details>
 <summary>🍞 <b>PASS:</b> Ensure that all variable font files have the same set of axes and axis ranges.</summary>
 
@@ -65,6 +54,14 @@ the files from a single family spreaded in several separate directories).
 </pre>
 
 * 🍞 **PASS** All files are in the same directory.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Do we have the latest version of FontBakery installed?</summary>
+
+* [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
+
+* 🍞 **PASS** Font Bakery is up-to-date
 
 </details>
 <details>
@@ -142,8 +139,8 @@ https://twitter.com/typenerd1/status/690361887926697986
 <pre>--- Rationale ---
 
 Per the OpenType spec:
-&#x27;The Font Family name ... should be shared among at most four fonts that differ
-only in weight or style ...&#x27;
+&#x27;The Font Family name [...] should be shared among at most four fonts that
+differ only in weight or style [...]&#x27;
 
 
 </pre>
@@ -215,69 +212,7 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
 <br>
 </details>
 <details>
-<summary><b>[163] jost[slnt,wght].ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> Is the Grid-fitting and Scan-conversion Procedure ('gasp') table set to optimize rendering?</summary>
-
-* [com.google.fonts/check/gasp](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/gasp)
-<pre>--- Rationale ---
-
-Traditionally version 0 &#x27;gasp&#x27; tables were set so that font sizes below 8 ppem
-had no grid fitting but did have antialiasing. From 9-16 ppem, just grid
-fitting. And fonts above 17ppem had both antialiasing and grid fitting toggled
-on. The use of accelerated graphics cards and higher resolution screens make
-this approach obsolete. Microsoft&#x27;s DirectWrite pushed this even further with
-much improved rendering built into the OS and apps.
-
-In this scenario it makes sense to simply toggle all 4 flags ON for all font
-sizes.
-
-
-</pre>
-
-* 🔥 **FAIL** Font is missing the 'gasp' table. Try exporting the font with autohinting enabled.
-If you are dealing with an unhinted font, it can be fixed by running the fonts through the command 'gftools fix-nonhinting'
-GFTools is available at https://pypi.org/project/gftools/ [code: lacks-gasp]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Font enables smart dropout control in "prep" table instructions?</summary>
-
-* [com.google.fonts/check/smart_dropout](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/smart_dropout)
-<pre>--- Rationale ---
-
-This setup is meant to ensure consistent rendering quality for fonts across all
-devices (with different rendering/hinting capabilities).
-
-Below is the snippet of instructions we expect to see in the fonts:
-B8 01 FF    PUSHW 0x01FF
-85          SCANCTRL (unconditinally turn on
-                      dropout control mode)
-B0 04       PUSHB 0x04
-8D          SCANTYPE (enable smart dropout control)
-
-&quot;Smart dropout control&quot; means activating rules 1, 2 and 5:
-Rule 1: If a pixel&#x27;s center falls within the glyph outline,
-        that pixel is turned on.
-Rule 2: If a contour falls exactly on a pixel&#x27;s center,
-        that pixel is turned on.
-Rule 5: If a scan line between two adjacent pixel centers
-        (either vertical or horizontal) is intersected
-        by both an on-Transition contour and an off-Transition
-        contour and neither of the pixels was already turned on
-        by rules 1 and 2, turn on the pixel which is closer to
-        the midpoint between the on-Transition contour and
-        off-Transition contour. This is &quot;Smart&quot; dropout control.
-
-For more detailed info (such as other rules not enabled in this snippet),
-please refer to the TrueType Instruction Set documentation.
-
-
-</pre>
-
-* 🔥 **FAIL** The 'prep' table does not contain TrueType instructions enabling smart dropout control. To fix, export the font with autohinting enabled, or run ttfautohint on the font, or run the `gftools fix-nonhinting` script. [code: lacks-smart-dropout]
-
-</details>
+<summary><b>[167] jost[slnt,wght].ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Ensure VFs do not contain slnt or ital axes. </summary>
 
@@ -297,51 +232,6 @@ https://arrowtype.github.io/vf-slnt-test/
 </pre>
 
 * 🔥 **FAIL** The "slnt" axis is not yet well supported on Google Chrome. [code: unsupported-slnt]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Are there unwanted tables?</summary>
-
-* [com.google.fonts/check/unwanted_tables](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unwanted_tables)
-<pre>--- Rationale ---
-
-Some font editors store source data in their own SFNT tables, and these can
-sometimes sneak into final release files, which should only have OpenType spec
-tables.
-
-
-</pre>
-
-* 🔥 **FAIL** The following unwanted font tables were found:
-Table: MVAR
-Reason: Produces a bug in DirectWrite which causes https://bugzilla.mozilla.org/show_bug.cgi?id=1492477, https://github.com/google/fonts/issues/2085
-
-They can be removed with the gftools fix-unwanted-tables script.
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Does the font have a DSIG table?</summary>
-
-* [com.google.fonts/check/dsig](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/dsig.html#com.google.fonts/check/dsig)
-<pre>--- Rationale ---
-
-Microsoft Office 2013 and below products expect fonts to have a digital
-signature declared in a DSIG table in order to implement OpenType features. The
-EOL date for Microsoft Office 2013 products is 4/11/2023. This issue does not
-impact Microsoft Office 2016 and above products. 
-
-This checks verifies that this signature is available in the font.
-
-A fake signature is enough to address this issue. If needed, a dummy table can
-be added to the font with the `gftools fix-dsig` script available at
-https://github.com/googlefonts/gftools
-
-Reference: https://github.com/googlefonts/fontbakery/issues/1845
-
-
-</pre>
-
-* 🔥 **FAIL** This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
 
 </details>
 <details>
@@ -751,6 +641,20 @@ When in doubt, please choose OFL for new font projects.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb includes production subsets.</summary>
+
+* [com.google.fonts/check/metadata/includes_production_subsets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/includes_production_subsets)
+<pre>--- Rationale ---
+
+Check METADATA.pb file includes the same subsets as the family in production.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata, listed_on_gfonts_api
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> METADATA.pb: Copyright notice is the same in all fonts?</summary>
 
 * [com.google.fonts/check/metadata/copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/copyright)
@@ -980,12 +884,11 @@ We may want to merge them all into a single check.
 
 Check METADATA.pb font weights are correct.
 
-For static fonts, the metadata weight should be the same
-as the static font&#x27;s OS/2 usWeightClass.
+For static fonts, the metadata weight should be the same as the static font&#x27;s
+OS/2 usWeightClass.
 
-For variable fonts, the weight value should be 400 if the
-font&#x27;s wght axis range includes 400, otherwise it should be the
-value closest to 400.
+For variable fonts, the weight value should be 400 if the font&#x27;s wght axis
+range includes 400, otherwise it should be the value closest to 400.
 
 
 </pre>
@@ -1221,16 +1124,15 @@ If the family already exists on Google Fonts, we need to ensure that the
 checked family&#x27;s vertical metrics are similar. This check will test the
 following schema which was outlined in Fontbakery issue #1162 [1]:
 
-- The family should visually have the same vertical metrics as the
-  Regular style hosted on Google Fonts.
-- If the family on Google Fonts has differing hhea and typo metrics,
-  the family being checked should use the typo metrics for both the
-  hhea and typo entries.
-- If the family on Google Fonts has use typo metrics not enabled and the
-  family being checked has it enabled, the hhea and typo metrics
-  should use the family on Google Fonts winAscent and winDescent values.
-- If the upms differ, the values must be scaled so the visual appearance
-  is the same.
+- The family should visually have the same vertical metrics as the Regular
+style hosted on Google Fonts.
+- If the family on Google Fonts has differing hhea and typo metrics, the family
+being checked should use the typo metrics for both the hhea and typo entries.
+- If the family on Google Fonts has use typo metrics not enabled and the family
+being checked has it enabled, the hhea and typo metrics should use the family
+on Google Fonts winAscent and winDescent values.
+- If the upms differ, the values must be scaled so the visual appearance is the
+same.
 
 [1] https://github.com/googlefonts/fontbakery/issues/1162
 
@@ -1329,6 +1231,26 @@ Per &quot;The CFF2 CharString Format&quot;, the &quot;Subr nesting, stack limit&
 </pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: is_cff2
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Does the font use deprecated CFF operators or operations?</summary>
+
+* [com.adobe.fonts/check/cff_deprecated_operators](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/cff.html#com.adobe.fonts/check/cff_deprecated_operators)
+<pre>--- Rationale ---
+
+The &#x27;dotsection&#x27; operator and the use of &#x27;endchar&#x27; to build accented
+characters from the Adobe Standard Encoding Character Set (&quot;seac&quot;) are
+deprecated in CFF. Adobe recommends repairing any fonts that use these,
+especially endchar-as-seac, because a rendering issue was discovered in
+Microsoft Word with a font that makes use of this operation. The check
+treats that useage as a FAIL. There are no known ill effects of using
+dotsection, so that check is a WARN.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cff
 
 </details>
 <details>
@@ -1442,10 +1364,10 @@ of hinted versus unhinted font files.
 
 	|  | ./source/vf/jost[slnt,wght].ttf |
 	|:--- | ---:|
-	| Dehinted Size | 149.0kb |
+	| Dehinted Size | 148.9kb |
 	| Hinted Size | 148.6kb |
-	| Increase | -396 bytes |
-	| Change   | -0.3 % |
+	| Increase | -348 bytes |
+	| Change   | -0.2 % |
  [code: size-impact]
 
 </details>
@@ -1486,6 +1408,37 @@ https://davelab6.github.io/epar/
 
 </details>
 <details>
+<summary>ℹ <b>INFO:</b> Is the Grid-fitting and Scan-conversion Procedure ('gasp') table set to optimize rendering?</summary>
+
+* [com.google.fonts/check/gasp](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/gasp)
+<pre>--- Rationale ---
+
+Traditionally version 0 &#x27;gasp&#x27; tables were set so that font sizes below 8 ppem
+had no grid fitting but did have antialiasing. From 9-16 ppem, just grid
+fitting. And fonts above 17ppem had both antialiasing and grid fitting toggled
+on. The use of accelerated graphics cards and higher resolution screens make
+this approach obsolete. Microsoft&#x27;s DirectWrite pushed this even further with
+much improved rendering built into the OS and apps.
+
+In this scenario it makes sense to simply toggle all 4 flags ON for all font
+sizes.
+
+
+</pre>
+
+* ℹ **INFO** These are the ppm ranges declared on the gasp table:
+
+PPM <= 65535:
+	flag = 0x0F
+	- Use grid-fitting
+	- Use grayscale rendering
+	- Use gridfitting with ClearType symmetric smoothing
+	- Use smoothing along multiple axes with ClearType®
+ [code: ranges]
+* 🍞 **PASS** The 'gasp' table is correctly set, with one gaspRange:value of 0xFFFF:0x0F.
+
+</details>
+<details>
 <summary>ℹ <b>INFO:</b> Check for font-v versioning.</summary>
 
 * [com.google.fonts/check/fontv](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fontv)
@@ -1522,7 +1475,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, loca, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, prep, GPOS, GSUB, DSIG, gasp]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1865,6 +1818,44 @@ https://docs.microsoft.com/en-us/typography/opentype/spec
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Font enables smart dropout control in "prep" table instructions?</summary>
+
+* [com.google.fonts/check/smart_dropout](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/smart_dropout)
+<pre>--- Rationale ---
+
+This setup is meant to ensure consistent rendering quality for fonts across all
+devices (with different rendering/hinting capabilities).
+
+Below is the snippet of instructions we expect to see in the fonts:
+B8 01 FF    PUSHW 0x01FF
+85          SCANCTRL (unconditinally turn on
+                      dropout control mode)
+B0 04       PUSHB 0x04
+8D          SCANTYPE (enable smart dropout control)
+
+&quot;Smart dropout control&quot; means activating rules 1, 2 and 5:
+Rule 1: If a pixel&#x27;s center falls within the glyph outline,
+        that pixel is turned on.
+Rule 2: If a contour falls exactly on a pixel&#x27;s center,
+        that pixel is turned on.
+Rule 5: If a scan line between two adjacent pixel centers
+        (either vertical or horizontal) is intersected
+        by both an on-Transition contour and an off-Transition
+        contour and neither of the pixels was already turned on
+        by rules 1 and 2, turn on the pixel which is closer to
+        the midpoint between the on-Transition contour and
+        off-Transition contour. This is &quot;Smart&quot; dropout control.
+
+For more detailed info (such as other rules not enabled in this snippet),
+please refer to the TrueType Instruction Set documentation.
+
+
+</pre>
+
+* 🍞 **PASS** 'prep' table contains instructions enabling smart dropout control.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> There must not be VTT Talk sources in the font.</summary>
 
 * [com.google.fonts/check/vttclean](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vttclean)
@@ -2068,6 +2059,29 @@ should be checked in.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check variable font instances don't have duplicate names</summary>
+
+* [com.google.fonts/check/varfont_duplicate_instance_names](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_duplicate_instance_names)
+<pre>--- Rationale ---
+
+This check&#x27;s purpose is to detect duplicate named instances names in a given
+variable font.
+
+Repeating instance names may be the result of instances for several VF axes
+defined in `fvar`, but since currently only weight+italic tokens are allowed in
+instance names as per GF specs, they ended up repeating.
+
+Instead, only a base set of fonts for the most default representation of the
+family can be defined through instances in the `fvar` table, all other
+instances will have to be left to access through the `STAT` table.
+
+
+</pre>
+
+* 🍞 **PASS** Instance names are unique
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
@@ -2186,6 +2200,22 @@ This check enforces adherence to recommended whitespace (codepoints 0020 and
 * [com.google.fonts/check/whitespace_ink](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_ink)
 
 * 🍞 **PASS** There is no whitespace glyph with ink.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Are there unwanted tables?</summary>
+
+* [com.google.fonts/check/unwanted_tables](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unwanted_tables)
+<pre>--- Rationale ---
+
+Some font editors store source data in their own SFNT tables, and these can
+sometimes sneak into final release files, which should only have OpenType spec
+tables.
+
+
+</pre>
+
+* 🍞 **PASS** There are no unwanted tables.
 
 </details>
 <details>
@@ -2489,6 +2519,31 @@ This is the TTF/CFF2 equivalent of the CFF &#x27;postscript_name_cff_vs_name&#x2
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Does the font have a DSIG table?</summary>
+
+* [com.google.fonts/check/dsig](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/dsig.html#com.google.fonts/check/dsig)
+<pre>--- Rationale ---
+
+Microsoft Office 2013 and below products expect fonts to have a digital
+signature declared in a DSIG table in order to implement OpenType features. The
+EOL date for Microsoft Office 2013 products is 4/11/2023. This issue does not
+impact Microsoft Office 2016 and above products.
+
+This checks verifies that this signature is available in the font.
+
+A fake signature is enough to address this issue. If needed, a dummy table can
+be added to the font with the `gftools fix-dsig` script available at
+https://github.com/googlefonts/gftools
+
+Reference: https://github.com/googlefonts/fontbakery/issues/1845
+
+
+</pre>
+
+* 🍞 **PASS** Digital Signature (DSIG) exists.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Space and non-breaking space have the same width?</summary>
 
 * [com.google.fonts/check/whitespace_widths](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/hmtx.html#com.google.fonts/check/whitespace_widths)
@@ -2684,6 +2739,23 @@ scale used for the italicAngle field in the post table.
 * 🍞 **PASS** Looks good!
 
 </details>
+<details>
+<summary>🍞 <b>PASS:</b> All fvar axes have a correspondent Axis Record on STAT table? </summary>
+
+* [com.google.fonts/check/varfont/stat_axis_record_for_each_axis](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/stat.html#com.google.fonts/check/varfont/stat_axis_record_for_each_axis)
+<pre>--- Rationale ---
+
+cording to the OpenType spec, there must be an Axis Record for every axis
+defined in the fvar table.
+
+tps://docs.microsoft.com/en-us/typography/opentype/spec/stat#axis-records
+
+
+</pre>
+
+* 🍞 **PASS** STAT table has all necessary Axis Records
+
+</details>
 <br>
 </details>
 
@@ -2691,5 +2763,5 @@ scale used for the italicAngle field in the post table.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 6 | 4 | 81 | 7 | 79 | 0 |
-| 0% | 3% | 2% | 46% | 4% | 45% | 0% |
+| 0 | 2 | 4 | 83 | 7 | 85 | 0 |
+| 0% | 1% | 2% | 46% | 4% | 47% | 0% |

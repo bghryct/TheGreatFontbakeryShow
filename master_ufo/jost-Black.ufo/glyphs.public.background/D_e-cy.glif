@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="De-cy" format="2">
+  <outline>
+    <contour>
+      <point x="180" y="60" type="line"/>
+      <point x="637" y="60" type="line"/>
+      <point x="945" y="767" type="line"/>
+      <point x="915" y="767" type="line"/>
+      <point x="1223" y="60" type="line"/>
+      <point x="1680" y="60" type="line"/>
+      <point x="930" y="1470" type="line"/>
+    </contour>
+  </outline>
+</glyph>

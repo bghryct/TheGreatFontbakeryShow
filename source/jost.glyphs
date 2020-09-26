@@ -1,8 +1,9 @@
 {
-.appVersion = "1274";
+.appVersion = "1346";
 DisplayStrings = (
 "/superscriptfour",
-"/DIVISIONSLASH"
+"/DIVISIONSLASH",
+"/quotedblbase"
 );
 copyright = "Copyright 2019 The Jost Project Authors (https://github.com/bghryct/Jost)";
 customParameters = (
@@ -72556,15 +72557,17 @@ unicode = 201A;
 {
 color = 4;
 glyphname = quotedblbase;
-lastChange = "2019-11-13 15:44:41 +0000";
+lastChange = "2020-09-21 20:48:26 +0000";
 layers = (
 {
 components = (
 {
 name = comma;
+transform = "{1, 0, 0, 1, 71, 0}";
 },
 {
 name = comma;
+transform = "{1, 0, 0, 1, 71, 0}";
 }
 );
 layerId = master01;

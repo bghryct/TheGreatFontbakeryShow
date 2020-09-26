@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="che-cy" format="2">
+  <advance width="830"/>
+  <unicode hex="0447"/>
+  <anchor x="810" y="0" name="bottomright"/>
+  <anchor x="415" y="920" name="top"/>
+  <outline>
+    <contour>
+      <point x="660" y="0" type="line"/>
+      <point x="680" y="0" type="line"/>
+      <point x="680" y="920" type="line"/>
+      <point x="660" y="920" type="line"/>
+      <point x="660" y="300" type="line"/>
+      <point x="460" y="300" type="line" smooth="yes"/>
+      <point x="205" y="300"/>
+      <point x="120" y="389"/>
+      <point x="120" y="656" type="curve" smooth="yes"/>
+      <point x="120" y="920" type="line"/>
+      <point x="100" y="920" type="line"/>
+      <point x="100" y="656" type="line" smooth="yes"/>
+      <point x="100" y="376"/>
+      <point x="192" y="280"/>
+      <point x="460" y="280" type="curve" smooth="yes"/>
+      <point x="660" y="280" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

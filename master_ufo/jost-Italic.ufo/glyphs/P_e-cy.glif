@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Pe-cy" format="2">
+  <advance width="1344"/>
+  <unicode hex="041F"/>
+  <anchor x="1324" y="0" name="bottomright"/>
+  <outline>
+    <contour>
+      <point x="34" y="0" type="line"/>
+      <point x="206" y="0" type="line"/>
+      <point x="458" y="1240" type="line"/>
+      <point x="1181" y="1242" type="line"/>
+      <point x="928" y="0" type="line"/>
+      <point x="1088" y="0" type="line"/>
+      <point x="1373" y="1400" type="line"/>
+      <point x="319" y="1400" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

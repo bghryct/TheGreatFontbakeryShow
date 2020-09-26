@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Te-cy" format="2">
+  <advance width="874"/>
+  <unicode hex="0422"/>
+  <anchor x="854" y="0" name="bottomright"/>
+  <outline>
+    <contour>
+      <point x="284" y="0" type="line"/>
+      <point x="306" y="0" type="line"/>
+      <point x="584" y="1378" type="line"/>
+      <point x="942" y="1378" type="line"/>
+      <point x="947" y="1400" type="line"/>
+      <point x="209" y="1400" type="line"/>
+      <point x="206" y="1378" type="line"/>
+      <point x="562" y="1378" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

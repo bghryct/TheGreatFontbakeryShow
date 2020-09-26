@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="gravecomb" format="2">
+  <unicode hex="0300"/>
+  <anchor x="49" y="920" name="_top"/>
+  <anchor x="-19" y="1400" name="top"/>
+  <outline>
+    <contour>
+      <point x="100" y="1122" type="line"/>
+      <point x="191" y="1176" type="line"/>
+      <point x="-49" y="1500" type="line"/>
+      <point x="-200" y="1424" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>356</integer>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>

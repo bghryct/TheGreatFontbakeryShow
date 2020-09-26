@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="IJ" format="2">
+  <advance width="1849"/>
+  <unicode hex="0132"/>
+  <anchor x="218" y="0" name="bottom_1"/>
+  <anchor x="1487" y="0" name="bottom_2"/>
+  <anchor x="452" y="0" name="ogonek"/>
+  <anchor x="526" y="1400" name="top_1"/>
+  <anchor x="1695" y="1400" name="top_2"/>
+  <anchor x="-177" y="1400" name="topleft"/>
+  <outline>
+    <component base="I"/>
+    <component base="J" xOffset="726"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>J</string>
+        </dict>
+      </array>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>I</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>J</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

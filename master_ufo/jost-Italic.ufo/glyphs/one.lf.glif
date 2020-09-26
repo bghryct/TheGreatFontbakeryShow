@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="one.lf" format="2">
+  <advance width="1200"/>
+  <outline>
+    <contour>
+      <point x="168" y="0" type="line"/>
+      <point x="987" y="0" type="line"/>
+      <point x="1009" y="160" type="line"/>
+      <point x="684" y="160" type="line"/>
+      <point x="862" y="1421" type="line"/>
+      <point x="335" y="1301" type="line"/>
+      <point x="312" y="1135" type="line"/>
+      <point x="667" y="1227" type="line"/>
+      <point x="517" y="160" type="line"/>
+      <point x="190" y="160" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>keepStroke</key>
+        <integer>95</integer>
+        <key>monoWidth</key>
+        <integer>1200</integer>
+        <key>useSpacing</key>
+        <integer>90</integer>
+      </dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

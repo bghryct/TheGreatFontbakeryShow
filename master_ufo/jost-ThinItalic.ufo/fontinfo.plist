@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>ascender</key>
+    <integer>1600</integer>
+    <key>capHeight</key>
+    <integer>1400</integer>
+    <key>copyright</key>
+    <string>Copyright 2019 The Jost Project Authors (https://github.com/bghryct/Jost)</string>
+    <key>descender</key>
+    <integer>-400</integer>
+    <key>familyName</key>
+    <string>jost</string>
+    <key>italicAngle</key>
+    <integer>0</integer>
+    <key>openTypeHeadCreated</key>
+    <string>2019/11/20 18:27:44</string>
+    <key>openTypeHheaAscender</key>
+    <integer>2060</integer>
+    <key>openTypeHheaDescender</key>
+    <integer>-700</integer>
+    <key>openTypeHheaLineGap</key>
+    <integer>200</integer>
+    <key>openTypeNameDesigner</key>
+    <string>Owen Earl, Mirko Velimirovic</string>
+    <key>openTypeNameLicense</key>
+    <string>Copyright 2019 jost https://github.com/bghryct/Jost</string>
+    <key>openTypeNameLicenseURL</key>
+    <string>http://scripts.sil.org/OFL</string>
+    <key>openTypeNameVersion</key>
+    <string>Version 3.5</string>
+    <key>openTypeOS2FamilyClass</key>
+    <array>
+      <integer>0</integer>
+      <integer>0</integer>
+    </array>
+    <key>openTypeOS2Type</key>
+    <array/>
+    <key>openTypeOS2TypoAscender</key>
+    <integer>2060</integer>
+    <key>openTypeOS2TypoDescender</key>
+    <integer>-700</integer>
+    <key>openTypeOS2TypoLineGap</key>
+    <integer>200</integer>
+    <key>openTypeOS2VendorID</key>
+    <string>GOOG</string>
+    <key>openTypeOS2WinAscent</key>
+    <integer>2110</integer>
+    <key>openTypeOS2WinDescent</key>
+    <integer>640</integer>
+    <key>postscriptBlueValues</key>
+    <array>
+      <integer>-20</integer>
+      <integer>0</integer>
+      <integer>920</integer>
+      <integer>940</integer>
+      <integer>1400</integer>
+      <integer>1417</integer>
+      <integer>1600</integer>
+      <integer>1616</integer>
+    </array>
+    <key>postscriptOtherBlues</key>
+    <array>
+      <integer>-459</integer>
+      <integer>-400</integer>
+    </array>
+    <key>postscriptUnderlinePosition</key>
+    <integer>-200</integer>
+    <key>postscriptUnderlineThickness</key>
+    <integer>100</integer>
+    <key>styleMapFamilyName</key>
+    <string>jost Thin Italic</string>
+    <key>styleMapStyleName</key>
+    <string>regular</string>
+    <key>styleName</key>
+    <string>Thin Italic</string>
+    <key>unitsPerEm</key>
+    <integer>2000</integer>
+    <key>versionMajor</key>
+    <integer>3</integer>
+    <key>versionMinor</key>
+    <integer>500</integer>
+    <key>xHeight</key>
+    <integer>920</integer>
+  </dict>
+</plist>

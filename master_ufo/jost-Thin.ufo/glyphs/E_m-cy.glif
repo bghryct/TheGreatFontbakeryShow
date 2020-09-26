@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Em-cy" format="2">
+  <advance width="1620"/>
+  <unicode hex="041C"/>
+  <outline>
+    <contour>
+      <point x="120" y="0" type="line"/>
+      <point x="142" y="0" type="line"/>
+      <point x="284" y="1350" type="line"/>
+      <point x="830" y="210" type="line"/>
+      <point x="1376" y="1350" type="line"/>
+      <point x="1518" y="0" type="line"/>
+      <point x="1540" y="0" type="line"/>
+      <point x="1390" y="1430" type="line"/>
+      <point x="830" y="262" type="line"/>
+      <point x="270" y="1430" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

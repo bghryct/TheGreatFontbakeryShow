@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="m" format="2">
+  <advance width="1380"/>
+  <unicode hex="006D"/>
+  <anchor x="684" y="0" name="bottom"/>
+  <anchor x="711" y="920" name="top"/>
+  <outline>
+    <contour>
+      <point x="170" y="0" type="line"/>
+      <point x="190" y="0" type="line"/>
+      <point x="190" y="560" type="line" smooth="yes"/>
+      <point x="190" y="751"/>
+      <point x="323" y="920"/>
+      <point x="474" y="920" type="curve" smooth="yes"/>
+      <point x="599" y="920"/>
+      <point x="680" y="810"/>
+      <point x="680" y="640" type="curve" smooth="yes"/>
+      <point x="680" y="0" type="line"/>
+      <point x="700" y="0" type="line"/>
+      <point x="700" y="560" type="line" smooth="yes"/>
+      <point x="700" y="751"/>
+      <point x="833" y="920"/>
+      <point x="984" y="920" type="curve" smooth="yes"/>
+      <point x="1109" y="920"/>
+      <point x="1190" y="810"/>
+      <point x="1190" y="640" type="curve" smooth="yes"/>
+      <point x="1190" y="0" type="line"/>
+      <point x="1210" y="0" type="line"/>
+      <point x="1210" y="640" type="line" smooth="yes"/>
+      <point x="1210" y="823"/>
+      <point x="1122" y="940"/>
+      <point x="984" y="940" type="curve" smooth="yes"/>
+      <point x="853" y="940"/>
+      <point x="739" y="832"/>
+      <point x="699" y="670" type="curve"/>
+      <point x="691" y="836"/>
+      <point x="604" y="940"/>
+      <point x="474" y="940" type="curve" smooth="yes"/>
+      <point x="340" y="940"/>
+      <point x="225" y="826"/>
+      <point x="190" y="658" type="curve"/>
+      <point x="190" y="920" type="line"/>
+      <point x="170" y="920" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

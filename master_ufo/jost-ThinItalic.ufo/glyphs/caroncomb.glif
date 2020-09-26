@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="caroncomb" format="2">
+  <unicode hex="030C"/>
+  <anchor x="185" y="920" name="_top"/>
+  <anchor x="108" y="1467" name="top"/>
+  <outline>
+    <contour>
+      <point x="96" y="1162" type="line"/>
+      <point x="424" y="1453" type="line"/>
+      <point x="406" y="1467" type="line"/>
+      <point x="89" y="1182" type="line"/>
+      <point x="103" y="1182" type="line"/>
+      <point x="-188" y="1458" type="line"/>
+      <point x="-203" y="1443" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>628</integer>
+      <key>public.markColor</key>
+      <string>0.65,0.48,0.2,1</string>
+    </dict>
+  </lib>
+</glyph>

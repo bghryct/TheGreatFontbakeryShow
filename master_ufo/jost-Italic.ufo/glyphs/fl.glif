@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="fl" format="2">
+  <advance width="970"/>
+  <unicode hex="FB02"/>
+  <anchor x="269" y="0" name="bottom_1"/>
+  <anchor x="754" y="0" name="bottom_2"/>
+  <anchor x="642" y="800" name="center"/>
+  <anchor x="44" y="1600" name="top_1"/>
+  <anchor x="948" y="1561" name="top_2"/>
+  <anchor x="1041" y="1560" name="topright"/>
+  <outline>
+    <component base="f"/>
+    <component base="l" xOffset="538"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>f</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>l</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

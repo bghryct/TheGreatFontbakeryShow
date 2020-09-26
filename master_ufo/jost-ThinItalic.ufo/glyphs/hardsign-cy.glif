@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hardsign-cy" format="2">
+  <advance width="964"/>
+  <unicode hex="044A"/>
+  <outline>
+    <contour>
+      <point x="208" y="0" type="line"/>
+      <point x="448" y="0" type="line" smooth="yes"/>
+      <point x="652" y="0"/>
+      <point x="828" y="153"/>
+      <point x="828" y="336" type="curve" smooth="yes"/>
+      <point x="828" y="478"/>
+      <point x="723" y="572"/>
+      <point x="560" y="572" type="curve" smooth="yes"/>
+      <point x="346" y="572" type="line"/>
+      <point x="417" y="920" type="line"/>
+      <point x="85" y="920" type="line"/>
+      <point x="82" y="900" type="line"/>
+      <point x="394" y="900" type="line"/>
+    </contour>
+    <contour>
+      <point x="233" y="20" type="line"/>
+      <point x="342" y="552" type="line"/>
+      <point x="559" y="552" type="line" smooth="yes"/>
+      <point x="715" y="552"/>
+      <point x="806" y="471"/>
+      <point x="806" y="338" type="curve" smooth="yes"/>
+      <point x="806" y="157"/>
+      <point x="638" y="20"/>
+      <point x="450" y="20" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

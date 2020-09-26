@@ -41,7 +41,7 @@ so send these to everyone beforehand
 
 QA stands for Quality Assurance
 
-In this workshop I'm going to show you how to use fontbakery on the command line as part of a git version controlled font build. We're going to be building Jost, which is a nifty paul renner inspired variable font designed by my friend Owen Earl of indestructible type and mastered by me. The font is available on google fonts. 
+In this workshop I'm going to show you how to use fontbakery on the command line as part of a git version controlled font build. We're going to be building Jost, which is a nifty paul renner inspired variable font designed by my friend Owen Earl of indestructible type insert link to indestructible and mastered by me. The font is available on google fonts. 
 
 We won't be building the exact Google build because it's been tested to the moon and back, Instead we'll be building and testing an earlier version that has problems. Because the whole point of showing off QA software is to show how it can help you identify problems, and then how to fix them. 
 
@@ -51,7 +51,8 @@ https://www.python.org/downloads/
 Ok cool, let's get into it. We're going to speedily install everythin in our venv. I'm going to assume you've got python installed. Maybe make people install python before the workshop. (email everyone)
 
 we're going to install a virtual environment. 
-this will keep all of our tooling separate from system installs of python. 
+this will keep all of our tooling separate from system installs of python.
+You're creating a safe environment/ sandbox to play with code. 
 
 python3 -m venv venv
 
@@ -62,6 +63,9 @@ https://git-scm.com/docs/gitignore
 
 now we're going to activate our virtual environment:
 source venv/bin/activate 
+
+
+KEYCASTr
 
 we're going to check what pip has installed for us in the venv
 pip list

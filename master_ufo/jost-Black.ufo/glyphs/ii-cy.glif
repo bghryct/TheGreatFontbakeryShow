@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ii-cy" format="2">
+  <advance width="1240"/>
+  <unicode hex="0438"/>
+  <anchor x="1220" y="0" name="bottomright"/>
+  <anchor x="696" y="920" name="top"/>
+  <outline>
+    <contour>
+      <point x="100" y="-70" type="line"/>
+      <point x="770" y="366" type="line"/>
+      <point x="770" y="0" type="line"/>
+      <point x="1140" y="0" type="line"/>
+      <point x="1140" y="990" type="line"/>
+      <point x="470" y="554" type="line"/>
+      <point x="470" y="920" type="line"/>
+      <point x="100" y="920" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

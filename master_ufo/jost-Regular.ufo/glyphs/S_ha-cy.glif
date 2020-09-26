@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Sha-cy" format="2">
+  <advance width="1970"/>
+  <unicode hex="0428"/>
+  <outline>
+    <contour>
+      <point x="160" y="0" type="line"/>
+      <point x="1810" y="0" type="line"/>
+      <point x="1810" y="1400" type="line"/>
+      <point x="1640" y="1400" type="line"/>
+      <point x="1640" y="160" type="line"/>
+      <point x="1070" y="160" type="line"/>
+      <point x="1070" y="1400" type="line"/>
+      <point x="900" y="1400" type="line"/>
+      <point x="900" y="160" type="line"/>
+      <point x="330" y="160" type="line"/>
+      <point x="330" y="1400" type="line"/>
+      <point x="160" y="1400" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

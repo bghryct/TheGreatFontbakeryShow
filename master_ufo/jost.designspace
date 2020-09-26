@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.1">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="100" maximum="900" default="400"/>
+    <axis tag="slnt" name="Slant" minimum="-8" maximum="0" default="0"/>
+  </axes>
+  <sources>
+    <source filename="jost-Thin.ufo" name="jost Thin" familyname="jost" stylename="Thin">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="jost-ThinItalic.ufo" name="jost Thin Italic" familyname="jost" stylename="Thin Italic">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+        <dimension name="Slant" xvalue="-8"/>
+      </location>
+    </source>
+    <source filename="jost-Regular.ufo" name="jost Regular" familyname="jost" stylename="Regular">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="jost-Italic.ufo" name="jost Italic" familyname="jost" stylename="Italic">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Slant" xvalue="-8"/>
+      </location>
+    </source>
+    <source filename="jost-Black.ufo" name="jost Black" familyname="jost" stylename="Black">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="jost-BlackItalic.ufo" name="jost Black Italic" familyname="jost" stylename="Black Italic">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+        <dimension name="Slant" xvalue="-8"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="jost Thin" familyname="jost" stylename="Thin" filename="../instance_ufo/jost-Thin.ufo" stylemapfamilyname="jost Thin" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="jost Thin Italic" familyname="jost" stylename="Thin Italic" filename="../instance_ufo/jost-ThinItalic.ufo" stylemapfamilyname="jost Thin Italic" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+        <dimension name="Slant" xvalue="-8"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="jost ExtraLight" familyname="jost" stylename="ExtraLight" filename="../instance_ufo/jost-ExtraLight.ufo" stylemapfamilyname="jost ExtraLight" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="jost ExtraLight Italic" familyname="jost" stylename="ExtraLight Italic" filename="../instance_ufo/jost-ExtraLightItalic.ufo" stylemapfamilyname="jost ExtraLight Italic" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Slant" xvalue="-8"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="jost Light" familyname="jost" stylename="Light" filename="../instance_ufo/jost-Light.ufo" stylemapfamilyname="jost Light" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="300"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="jost Light Italic" familyname="jost" stylename="Light Italic" filename="../instance_ufo/jost-LightItalic.ufo" stylemapfamilyname="jost Light Italic" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="300"/>
+        <dimension name="Slant" xvalue="-8"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="jost Regular" familyname="jost" stylename="Regular" filename="../instance_ufo/jost-Regular.ufo" stylemapfamilyname="jost" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="jost Italic" familyname="jost" stylename="Italic" filename="../instance_ufo/jost-Italic.ufo" stylemapfamilyname="jost" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Slant" xvalue="-8"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="jost Medium" familyname="jost" stylename="Medium" filename="../instance_ufo/jost-Medium.ufo" stylemapfamilyname="jost Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="jost Medium Italic" familyname="jost" stylename="Medium Italic" filename="../instance_ufo/jost-MediumItalic.ufo" stylemapfamilyname="jost Medium Italic" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+        <dimension name="Slant" xvalue="-8"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="jost SemiBold" familyname="jost" stylename="SemiBold" filename="../instance_ufo/jost-SemiBold.ufo" stylemapfamilyname="jost SemiBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="600"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="jost SemiBold Italic" familyname="jost" stylename="SemiBold Italic" filename="../instance_ufo/jost-SemiBoldItalic.ufo" stylemapfamilyname="jost SemiBold Italic" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="600"/>
+        <dimension name="Slant" xvalue="-8"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="jost Bold" familyname="jost" stylename="Bold" filename="../instance_ufo/jost-Bold.ufo" stylemapfamilyname="jost" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="jost Bold Italic" familyname="jost" stylename="Bold Italic" filename="../instance_ufo/jost-BoldItalic.ufo" stylemapfamilyname="jost" stylemapstylename="bold italic">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+        <dimension name="Slant" xvalue="-8"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="jost ExtraBold" familyname="jost" stylename="ExtraBold" filename="../instance_ufo/jost-ExtraBold.ufo" stylemapfamilyname="jost ExtraBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="jost ExtraBold Italic" familyname="jost" stylename="ExtraBold Italic" filename="../instance_ufo/jost-ExtraBoldItalic.ufo" stylemapfamilyname="jost ExtraBold Italic" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Slant" xvalue="-8"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="jost Black" familyname="jost" stylename="Black" filename="../instance_ufo/jost-Black.ufo" stylemapfamilyname="jost Black" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="jost Black Italic" familyname="jost" stylename="Black Italic" filename="../instance_ufo/jost-BlackItalic.ufo" stylemapfamilyname="jost Black Italic" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+        <dimension name="Slant" xvalue="-8"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+  </instances>
+  <lib>
+    <dict>
+      <key>UFOFormat</key>
+      <integer>2</integer>
+      <key>public.skipExportGlyphs</key>
+      <array>
+        <string>a.alt</string>
+      </array>
+    </dict>
+  </lib>
+</designspace>

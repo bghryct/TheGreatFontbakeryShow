@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ha-cy" format="2">
+  <advance width="1044"/>
+  <unicode hex="0425"/>
+  <anchor x="1024" y="0" name="bottomright"/>
+  <outline>
+    <contour>
+      <point x="-74" y="0" type="line"/>
+      <point x="-46" y="0" type="line"/>
+      <point x="512" y="710" type="line"/>
+      <point x="768" y="0" type="line"/>
+      <point x="796" y="0" type="line"/>
+      <point x="525" y="732" type="line"/>
+      <point x="1052" y="1396" type="line"/>
+      <point x="1024" y="1396" type="line"/>
+      <point x="516" y="756" type="line"/>
+      <point x="283" y="1400" type="line"/>
+      <point x="257" y="1400" type="line"/>
+      <point x="503" y="736" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

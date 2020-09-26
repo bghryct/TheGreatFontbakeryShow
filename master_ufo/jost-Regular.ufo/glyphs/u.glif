@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="u" format="2">
+  <advance width="1050"/>
+  <unicode hex="0075"/>
+  <anchor x="525" y="0" name="bottom"/>
+  <anchor x="900" y="0" name="ogonek"/>
+  <anchor x="535" y="920" name="top"/>
+  <anchor x="1030" y="920" name="topright"/>
+  <outline>
+    <contour>
+      <point x="466" y="-20" type="curve" smooth="yes"/>
+      <point x="588" y="-20"/>
+      <point x="678" y="35"/>
+      <point x="740" y="145" type="curve"/>
+      <point x="740" y="0" type="line"/>
+      <point x="900" y="0" type="line"/>
+      <point x="900" y="920" type="line"/>
+      <point x="740" y="920" type="line"/>
+      <point x="740" y="360" type="line" smooth="yes"/>
+      <point x="740" y="224"/>
+      <point x="645" y="130"/>
+      <point x="506" y="130" type="curve" smooth="yes"/>
+      <point x="378" y="130"/>
+      <point x="310" y="209"/>
+      <point x="310" y="360" type="curve" smooth="yes"/>
+      <point x="310" y="920" type="line"/>
+      <point x="150" y="920" type="line"/>
+      <point x="150" y="340" type="line" smooth="yes"/>
+      <point x="150" y="120"/>
+      <point x="273" y="-20"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

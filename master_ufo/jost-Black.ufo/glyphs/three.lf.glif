@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="three.lf" format="2">
+  <advance width="1200"/>
+  <outline>
+    <contour>
+      <point x="591" y="-24" type="curve" smooth="yes"/>
+      <point x="920" y="-24"/>
+      <point x="1162" y="155"/>
+      <point x="1162" y="401" type="curve" smooth="yes"/>
+      <point x="1162" y="564"/>
+      <point x="1079" y="683"/>
+      <point x="916" y="748" type="curve"/>
+      <point x="1059" y="808"/>
+      <point x="1126" y="907"/>
+      <point x="1126" y="1045" type="curve" smooth="yes"/>
+      <point x="1126" y="1273"/>
+      <point x="909" y="1440"/>
+      <point x="610" y="1440" type="curve" smooth="yes"/>
+      <point x="296" y="1440"/>
+      <point x="93" y="1255"/>
+      <point x="93" y="973" type="curve"/>
+      <point x="474" y="973" type="line"/>
+      <point x="474" y="1061"/>
+      <point x="525" y="1118"/>
+      <point x="607" y="1118" type="curve" smooth="yes"/>
+      <point x="675" y="1118"/>
+      <point x="716" y="1079"/>
+      <point x="716" y="1018" type="curve" smooth="yes"/>
+      <point x="716" y="927"/>
+      <point x="617" y="855"/>
+      <point x="498" y="855" type="curve"/>
+      <point x="498" y="608" type="line"/>
+      <point x="669" y="608"/>
+      <point x="753" y="549"/>
+      <point x="753" y="439" type="curve" smooth="yes"/>
+      <point x="753" y="353"/>
+      <point x="699" y="298"/>
+      <point x="609" y="298" type="curve" smooth="yes"/>
+      <point x="506" y="298"/>
+      <point x="447" y="371"/>
+      <point x="447" y="490" type="curve"/>
+      <point x="38" y="490" type="line"/>
+      <point x="38" y="178"/>
+      <point x="253" y="-24"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>keepStroke</key>
+        <integer>95</integer>
+        <key>monoWidth</key>
+        <integer>1200</integer>
+        <key>useSpacing</key>
+        <integer>90</integer>
+      </dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

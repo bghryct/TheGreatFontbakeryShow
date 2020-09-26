@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="zero.lf" format="2">
+  <advance width="1200"/>
+  <outline>
+    <contour>
+      <point x="600" y="-30" type="curve" smooth="yes"/>
+      <point x="975" y="-30"/>
+      <point x="1191" y="239"/>
+      <point x="1191" y="700" type="curve" smooth="yes"/>
+      <point x="1191" y="1160"/>
+      <point x="974" y="1430"/>
+      <point x="600" y="1430" type="curve" smooth="yes"/>
+      <point x="228" y="1430"/>
+      <point x="9" y="1158"/>
+      <point x="9" y="700" type="curve" smooth="yes"/>
+      <point x="9" y="239"/>
+      <point x="225" y="-30"/>
+    </contour>
+    <contour>
+      <point x="600" y="332" type="curve" smooth="yes"/>
+      <point x="491" y="332"/>
+      <point x="421" y="479"/>
+      <point x="421" y="700" type="curve" smooth="yes"/>
+      <point x="421" y="921"/>
+      <point x="491" y="1068"/>
+      <point x="600" y="1068" type="curve" smooth="yes"/>
+      <point x="709" y="1068"/>
+      <point x="779" y="921"/>
+      <point x="779" y="700" type="curve" smooth="yes"/>
+      <point x="779" y="479"/>
+      <point x="709" y="332"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>keepStroke</key>
+        <integer>95</integer>
+        <key>monoWidth</key>
+        <integer>1200</integer>
+        <key>useSpacing</key>
+        <integer>90</integer>
+      </dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

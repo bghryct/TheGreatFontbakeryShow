@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="partialdiff" format="2">
+  <advance width="1301"/>
+  <unicode hex="2202"/>
+  <outline>
+    <contour>
+      <point x="571" y="-40" type="curve" smooth="yes"/>
+      <point x="952" y="-40"/>
+      <point x="1264" y="242"/>
+      <point x="1264" y="594" type="curve" smooth="yes"/>
+      <point x="1264" y="817"/>
+      <point x="1139" y="1050"/>
+      <point x="770" y="1520" type="curve"/>
+      <point x="436" y="1340" type="line"/>
+      <point x="633" y="1177"/>
+      <point x="767" y="1000"/>
+      <point x="915" y="711" type="curve"/>
+      <point x="981" y="715" type="line"/>
+      <point x="874" y="884"/>
+      <point x="743" y="968"/>
+      <point x="573" y="968" type="curve" smooth="yes"/>
+      <point x="275" y="968"/>
+      <point x="55" y="710"/>
+      <point x="55" y="424" type="curve" smooth="yes"/>
+      <point x="55" y="144"/>
+      <point x="264" y="-40"/>
+    </contour>
+    <contour>
+      <point x="610" y="323" type="curve" smooth="yes"/>
+      <point x="529" y="323"/>
+      <point x="472" y="380"/>
+      <point x="472" y="462" type="curve" smooth="yes"/>
+      <point x="472" y="583"/>
+      <point x="595" y="701"/>
+      <point x="710" y="701" type="curve" smooth="yes"/>
+      <point x="792" y="701"/>
+      <point x="851" y="641"/>
+      <point x="851" y="558" type="curve" smooth="yes"/>
+      <point x="851" y="439"/>
+      <point x="729" y="323"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>o</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>o</string>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Zhe-cy" format="2">
+  <advance width="1204"/>
+  <unicode hex="0416"/>
+  <anchor x="1184" y="0" name="bottomright"/>
+  <anchor x="777" y="1400" name="top"/>
+  <outline>
+    <contour>
+      <point x="-106" y="0" type="line"/>
+      <point x="-72" y="0" type="line"/>
+      <point x="640" y="730" type="line"/>
+      <point x="490" y="0" type="line"/>
+      <point x="510" y="0" type="line"/>
+      <point x="661" y="733" type="line"/>
+      <point x="1060" y="0" type="line"/>
+      <point x="1084" y="0" type="line"/>
+      <point x="676" y="738" type="line"/>
+      <point x="1346" y="1396" type="line"/>
+      <point x="1312" y="1396" type="line"/>
+      <point x="664" y="751" type="line"/>
+      <point x="798" y="1398" type="line"/>
+      <point x="778" y="1398" type="line"/>
+      <point x="643" y="746" type="line"/>
+      <point x="237" y="1400" type="line"/>
+      <point x="213" y="1400" type="line"/>
+      <point x="628" y="742" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>
